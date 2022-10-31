@@ -2,11 +2,13 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { Navbar } from "react-bootstrap";
 
-const Header = () => {
+const Header = (props) => {
+  // extract spesific properties from object
+  const { title } = props;
   return (
     <Navbar bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="/">Images Gallery</Navbar.Brand>
+        <Navbar.Brand href="/">{title}</Navbar.Brand>
       </Container>
     </Navbar>
   );
