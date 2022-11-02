@@ -1,19 +1,14 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
-const Search = () => {
+// Accept handleSearchSubmit() and store it in handleSubmit
+const Search = ({ handleSubmit }) => {
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={4}>
-          <Form>
+          {/* Call handleSearchSubmit() function that  already stored in handleSubmit */}
+          <Form onSubmit={handleSubmit}>
             <Form.Row>
               <Col xs={9}>
                 <Form.Control placeholder="Search for new images..." />
