@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 // Accept handleSearchSubmit() and store it in handleSubmit
-const Search = ({ handleSubmit }) => {
+const Search = ({ word, setWord, handleSubmit }) => {
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
@@ -10,9 +10,17 @@ const Search = ({ handleSubmit }) => {
           {/* Call handleSearchSubmit() function that  already stored in handleSubmit */}
           <Form onSubmit={handleSubmit}>
             <Form.Row>
+              {/* Input field */}
               <Col xs={9}>
-                <Form.Control placeholder="Search for new images..." />
+                <Form.Control
+                  type="text"
+                  value={word}
+                  onChange={(e) => setWord(e.target.value)}
+                  placeholder="Search for new images..."
+                />
               </Col>
+
+              {/* Button Submit */}
               <Col>
                 <Button type="submit" variant="warning">
                   Search
