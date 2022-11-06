@@ -1,0 +1,32 @@
+===================
+|	 REACT	|
+===================
+
+Environment Variables
+---------------------
+Every JS application has access to global variable called "process". It is an object and inside
+of it there was property called "env". This property holds all environment variables of the 
+application.
+
+The filename that we could actually use for storage of any variables that should not be
+committed to git are:
+	- .env.local
+	- .env.development.local
+	- .env.test.local
+	- .env.production.local
+React application will automatically look for those environment files and insert variables 
+from them into process.env object.
+
+Details about environment variables handling in React apps bootstrapped using create-react-app
+find it in: https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+
+
+
+
+
+
+
+
+
+

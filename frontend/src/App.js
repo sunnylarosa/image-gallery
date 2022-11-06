@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import Search from "./components/Search";
 
+// Access environment variable
+const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
+
 const App = () => {
   // useState accept 2 parameters: a string and a function
   // First parameter, a string, will be stored in the variable 'word'
