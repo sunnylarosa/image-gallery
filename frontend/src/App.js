@@ -24,6 +24,19 @@ const App = () => {
     // console.log(e);
     // console.log(e.target[0].value);
     console.log(word);
+
+    // First API Call
+    fetch(
+      // This url format is based on Unsplash documentation: https://unsplash.com/documentation#search-photos
+      `https://api.unsplash.com/photos/random/?query=${word}&client_id=${UNSPLASH_KEY}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (

@@ -21,6 +21,22 @@ Details about environment variables handling in React apps bootstrapped using cr
 find it in: https://create-react-app.dev/docs/adding-custom-environment-variables/
 
 
+Function: fetch()
+-----------------
+fetch() function will retrieve a Promise. Promises in Javascript are used to handle delayed 
+actions. For example, in this case we send request to the remote server but don't know when
+it will answer. Waiting for response doesn't block execution of other parts of the 
+application code.Promise in Javascript could be either resolved or rejected. If it is rejected, 
+then some fail occured and it could be handled in Javascript.
+
+We should define a then() function as a callback function that will be executed when promise 
+is resolved. If you hover on then() function, we can see that this function will also returns 
+promise. Then we're gonna resolve this promise again using then(), and now we have 2 then() 
+functions in our code.
+
+After then() method call, let's call one more method called catch(). Method catch() will be
+called in case the promise is rejected. Rejected promise will happen if there is some error
+that occured during fetch request.
 
 
 
