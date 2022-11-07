@@ -7,7 +7,7 @@ const Search = ({ word, setWord, handleSubmit }) => {
     <Container className="mt-4">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={4}>
-          {/* Call handleSearchSubmit() function that  already stored in handleSubmit */}
+          {/* Call handleSearchSubmit() function that already stored in handleSubmit */}
           <Form onSubmit={handleSubmit}>
             <Form.Row>
               {/* Input field */}

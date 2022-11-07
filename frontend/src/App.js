@@ -37,6 +37,9 @@ const App = () => {
       .catch((err) => {
         console.log(err);
       });
+
+    // Auto clear the search box after searching some keywords by calling setWord() function from useState();
+    setWord("");
   };
 
   return (
