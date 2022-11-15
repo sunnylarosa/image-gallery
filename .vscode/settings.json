@@ -1,0 +1,7 @@
+{
+  // We want to eslint validate our HTML, JavaScript, and JavaScript React files
+  "eslint.validate": ["html", "javascript", "javascriptreact"],
+
+  // Adjust tab size
+  "editor.tabSize": 2
+}
